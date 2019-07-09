@@ -40,7 +40,7 @@
 
 
 
-# appointment-service (Spring boot service used to register , login , find appointment by token)
+# appointment-service (Spring boot service used to addAppointment  ,showAppointment and patient make an appointment)
 - build
 1. change ip adress (DB ,serverurl, instance ip) to your ip address and and db (username,password) from application.properties
 2. build project by `mvn install`
