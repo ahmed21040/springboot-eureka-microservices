@@ -12,7 +12,7 @@
 
 - create database schema name `extremedb` 
 
-- eureka-server (Spring boot for eureka server)
+# eureka-server (Spring boot for eureka server)
 - build
 1. build project by `mvn install`
 2. open terminal and go to Dockerfile location 
@@ -21,18 +21,18 @@
 
 
 
-- doctor-service (Spring boot service used to register , login , find doctor by token)
+# doctor-service (Spring boot service used to register , login , find doctor by token)
 - build
-1. change ip adress (DB ,serverurl, instance ip) from application.properties to your ip address
+1. change ip adress (DB ,serverurl, instance ip) to your ip address and and db (username,password) from application.properties
 2. build project by `mvn install`
 3. open terminal and go to Dockerfile location 
 4. `docker build -t doctor-service .`
 5. `docker run --name doctor-service -d -p 8081:8081 doctor-service`
 
 
-- patient-service (Spring boot service used to register , login , find patient by token)
+# patient-service (Spring boot service used to register , login , find patient by token)
 - build
-1. change ip adress (DB ,serverurl, instance ip) from application.properties to your ip address
+1. change ip adress (DB ,serverurl, instance ip) to your ip address and and db (username,password) from application.properties
 2. build project by `mvn install`
 3. open terminal and go to Dockerfile location 
 4. `docker build -t patient-service .`
@@ -40,9 +40,9 @@
 
 
 
-- appointment-service (Spring boot service used to register , login , find appointment by token)
+# appointment-service (Spring boot service used to register , login , find appointment by token)
 - build
-1. change ip adress (DB ,serverurl, instance ip) from application.properties to your ip address
+1. change ip adress (DB ,serverurl, instance ip) to your ip address and and db (username,password) from application.properties
 2. build project by `mvn install`
 3. open terminal and go to Dockerfile location 
 4. `docker build -t appointment-service .`
